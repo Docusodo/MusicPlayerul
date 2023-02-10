@@ -31,6 +31,9 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/skip_next"
+
+        <Button
             android:id="@+id/skip_previous"
             android:layout_width="230px"
             android:layout_height="120px"
@@ -46,9 +49,6 @@
             android:layout_marginRight="30px"
             android:backgroundTint="#1c2331"
             android:text="Play Music" />
-
-        <Button
-            android:id="@+id/skip_next"
             android:layout_width="230px"
             android:layout_height="120px"
             android:layout_marginLeft="30px"

@@ -14,7 +14,8 @@
         android:layout_width="244dp"
         android:layout_height="256dp"
         android:src="@drawable/sawbones"
-        />
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
     <TextView
         android:id="@+id/musikName"
         android:layout_width="match_parent"
@@ -22,24 +23,24 @@
         android:text="TextView"
         android:textAlignment="center"
         android:textColorHint="@color/black"
-        android:textSize="50px"/>
+        android:textSize="50px"
+        tools:ignore="HardcodedText,PxUsage" />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100px"
         android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/skip_next"
+        android:orientation="horizontal"
+        tools:ignore="PxUsage">
 
         <Button
             android:id="@+id/skip_previous"
             android:layout_width="230px"
-            android:layout_height="120px"
+            android:layout_height="48dp"
             android:layout_marginRight="30px"
             android:backgroundTint="#1c2331"
-            android:text="Prev" />
+            android:text="Prev"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded" />
 
         <Button
             android:id="@+id/play_button"
@@ -48,33 +49,45 @@
             android:layout_marginLeft="30px"
             android:layout_marginRight="30px"
             android:backgroundTint="#1c2331"
-            android:text="Play Music" />
+            android:text="Play Music"
+            tools:ignore="ButtonStyle,HardcodedText,TextSizeCheck" />
+
+        <Button
+            android:id="@+id/skip_next"
             android:layout_width="230px"
-            android:layout_height="120px"
+            android:layout_height="48dp"
             android:layout_marginLeft="30px"
             android:backgroundTint="#1c2331"
-            android:text="Next" />
+            android:text="Next"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded" />
+
+
+
+
     </LinearLayout>
 
     <Button
         android:id="@+id/stop"
         android:layout_width="230px"
-        android:layout_height="110px"
+        android:layout_height="48dp"
         android:backgroundTint="#1c2331"
-        android:text="Reset" />
+        android:text="Reset"
+        tools:ignore="HardcodedText,PxUsage" />
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="300px">
+        android:layout_marginTop="300px"
+        tools:ignore="PxUsage">
         <TextView
             android:id="@+id/time_elapsed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0:00"
-            android:layout_marginLeft="30px"/>
+            android:layout_marginLeft="30px"
+            tools:ignore="HardcodedText,RtlHardcoded" />
 
         <SeekBar
             android:id="@+id/seekBar"
@@ -91,7 +104,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0:00"
-            android:layout_marginRight="30px"/>
+            android:layout_marginRight="30px"
+            tools:ignore="HardcodedText,RtlHardcoded" />
 
     </LinearLayout>
 
